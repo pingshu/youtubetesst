@@ -15,13 +15,7 @@
 #!select = 歌词翻译语言, zh-Hans, zh-Hant, ja, ko, en, off
 #select = 启用调试模式, true, false
 
-[Rule]
-AND, ((DOMAIN-SUFFIX, googlevideo.com),  (PROTOCOL, QUIC)), REJECT
-AND, ((DOMAIN-SUFFIX, youtubei.googleapis.com),  (PROTOCOL, QUIC)), REJECT
 
-[Rewrite]
-# 使用reject-dict方法以减少开销
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad reject
 
 [Script]
 # YouTube去广告
