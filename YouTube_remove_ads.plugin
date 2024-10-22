@@ -17,7 +17,7 @@
 
 [Rewrite]
 # 使用reject-dict方法以减少开销
-^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad direct
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad reject-drop
 
 [Script]
 # YouTube去广告
